@@ -1,0 +1,6 @@
+*.o
+Debug
+ipch
+XMLTest.VC.VC.opendb
+XMLTest.VC.db
+XMLTest.vcxproj.filters

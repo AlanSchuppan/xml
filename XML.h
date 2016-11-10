@@ -54,8 +54,9 @@ class CNode : public CValue {
   vector<CValue> mAttributes;
   vector<CNode> mChildren;
 
-  static bool NextTag(istream &inStream, string &name, vector<CValue> &attributes);
   void PathParse(const string &path, vector<string> &parsing);
+public:
+  static ETagType NextTag(istream &inStream, string &name, vector<CValue> &attributes);
 public:
   CNode(const string &name, const string &value = "");
   CNode(const CNode &other);
